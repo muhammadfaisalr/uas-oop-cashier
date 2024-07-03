@@ -1,0 +1,26 @@
+@font-face {
+    src: url('../fonts/PlusJakartaSansSemiBold.ttf');
+}
+
+.labelSidebarSemibold    {
+    -fx-font-family: "Plus Jakarta Sans SemiBold" !important;
+    -fx-font-size: 16;
+    -fx-text-fill: white;
+}
+
+.labelSidebar {
+    -fx-font-family: "Plus Jakarta Sans Medium";
+    -fx-text-fill: #333333;
+}
+
+.label-for {
+    -fx-font-family: "Plus Jakarta Sans";
+}
+
+.buttonBackgroundBlue {
+    -fx-background-color: #2F80ED !important;
+}
+
+.imageProfile {
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 10, 0, 0, 0);
+}
