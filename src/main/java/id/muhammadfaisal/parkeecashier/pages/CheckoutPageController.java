@@ -90,6 +90,7 @@ public class CheckoutPageController implements Initializable {
                             System.out.println("Error: " + throwable.getMessage());
                             this.labelInfo.setText("ERROR: \n" + throwable.getMessage());
                             this.vBoxTransaction.setVisible(false);
+                            this.mfxProgressBar.setVisible(false);
                         },
                         () -> {
                             this.mfxProgressBar.setVisible(false);
@@ -151,6 +152,7 @@ public class CheckoutPageController implements Initializable {
                             System.out.println("Error: " + throwable.getMessage());
                             this.labelInfo.setText("ERROR: \n" + throwable.getMessage());
                             this.vBoxTransaction.setVisible(false);
+                            this.mfxProgressBar.setVisible(false);
                         },
                         () -> {
                             this.mfxProgressBar.setVisible(false);

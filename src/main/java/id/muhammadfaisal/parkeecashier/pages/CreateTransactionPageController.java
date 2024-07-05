@@ -85,6 +85,7 @@ public class CreateTransactionPageController<T> implements Initializable {
                             // handle error here, e.g., log the error or show an error message
                             System.out.println("Error: " + throwable.getMessage());
                             this.labelInfo.setText("ERROR: \n" + throwable.getMessage());
+                            this.mfxProgressBar.setVisible(false);
                         },
                         () -> {
                             this.mfxProgressBar.setVisible(false);
