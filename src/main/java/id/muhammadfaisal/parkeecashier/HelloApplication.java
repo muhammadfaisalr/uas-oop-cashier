@@ -1,5 +1,8 @@
 package id.muhammadfaisal.parkeecashier;
 
+import io.github.palexdev.materialfx.theming.JavaFXThemes;
+import io.github.palexdev.materialfx.theming.MaterialFXStylesheets;
+import io.github.palexdev.materialfx.theming.UserAgentBuilder;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
@@ -15,9 +18,16 @@ public class HelloApplication extends Application {
         FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("pages/home-page.fxml"));
         stage.setMaximized(true);
         Scene scene = new Scene(fxmlLoader.load(), 320, 240);
+        UserAgentBuilder.builder()
+                .themes(JavaFXThemes.MODENA)
+                .themes(MaterialFXStylesheets.forAssemble(true))
+                .setDeploy(true)
+                .setResolveAssets(true)
+                .build()
+                .setGlobal();
         String css = (Objects.requireNonNull(getClass().getResource("style/styles.css")).toExternalForm());
         Font.loadFont(Objects.requireNonNull(getClass().getResource("fonts/PlusJakartaSansSemiBold.ttf")).toExternalForm(), 10);
-        stage.setTitle("Hello!");
+        stage.setTitle("SOLID Parking!");
         stage.setScene(scene);
         stage.getScene().getStylesheets().addFirst(css);
         stage.show();

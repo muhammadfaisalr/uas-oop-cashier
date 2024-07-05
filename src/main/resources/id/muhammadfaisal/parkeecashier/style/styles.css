@@ -2,7 +2,16 @@
     src: url('../fonts/PlusJakartaSansSemiBold.ttf');
 }
 
-.labelSidebarSemibold    {
+@font-face {
+    src: url('../fonts/PlusJakartaSans-Regular.ttf');
+}
+
+@font-face {
+    src: url('../fonts/PlusJakartaSans-Medium.ttf');
+}
+
+
+.labelSidebarSemibold {
     -fx-font-family: "Plus Jakarta Sans SemiBold" !important;
     -fx-font-size: 16;
     -fx-text-fill: white;
@@ -22,5 +31,166 @@
 }
 
 .imageProfile {
-    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 10, 0, 0, 0);
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.8), 10, 0, 0, 0);
+}
+
+.label-header {
+    -fx-text-fill: #2F80ED;
+    -fx-font-family: "Plus Jakarta Sans SemiBold";
+    -fx-font-weight: 600;
+    -fx-font-size: 18;
+}
+
+
+.btn-status-connected {
+    -fx-background-color: #00c209;
+    -fx-background-radius: 100%;
+    -fx-border-width: 1;
+    -fx-border-color: #2d2d2d;
+    -fx-border-radius: 100%;
+}
+
+.btn-close {
+    -fx-background-color: #ededed;
+    -fx-background-radius: 48;
+    -fx-text-fill: #000;
+    -fx-font-family: "Plus Jakarta Sans Medium";
+    -fx-graphic-text-gap: 12;
+}
+
+.btn-secondary {
+    -fx-background-color: #00a6fb;
+    -fx-background-radius: 48;
+    -fx-text-fill: white;
+    -fx-font-family: "Plus Jakarta Sans Medium";
+    -fx-graphic-text-gap: 12;
+}
+
+.text-btn {
+    -fx-background-radius: 48;
+    -fx-background-color: transparent;
+    -fx-text-fill: #2F80ED;
+    -fx-font-family: "Plus Jakarta Sans Medium";
+}
+
+.btn-primary-inverted {
+    -fx-background-color: white;
+    -fx-background-radius: 48;
+    -fx-text-fill: #2F80ED;
+    -fx-font-family: "Plus Jakarta Sans Medium";
+    -fx-graphic-text-gap: 12;
+}
+
+.btn-primary-inverted-text-black {
+    -fx-background-color: white;
+    -fx-background-radius: 48;
+    -fx-text-fill: #121212;
+    -fx-font-family: "Plus Jakarta Sans Medium";
+    -fx-graphic-text-gap: 12;
+}
+
+.btn-primary {
+    -fx-background-color: #2F80ED;
+    -fx-background-radius: 48;
+    -fx-text-fill: white;
+    -fx-font-family: "Plus Jakarta Sans Medium";
+    -fx-graphic-text-gap: 12;
+}
+
+.text-field .content {
+    -fx-text-fill: #fff;
+    -fx-border: none;
+    -fx-background-color: transparent;
+}
+
+.text-field {
+    -fx-prompt-text-fill: gray;
+}
+.combo-box {
+    -fx-width: 100%;
+    -fx-background-color: #f0f0f0;
+    -fx-border-color: #ccc;
+    -fx-border-width: 1;
+    -fx-padding: 5;
+}
+
+.combo-box.button {
+    -fx-background-color: #2F80ED;
+    -fx-text-fill: #fff;
+    -fx-cursor: hand;
+}
+
+.combo-box.list-view {
+    -fx-background-color: #fff;
+    -fx-border-color: #ccc;
+    -fx-border-width: 1;
+}
+
+.combo-box.list-view.list-cell:selected {
+    -fx-background-color: #2F80ED;
+    -fx-text-fill: #fff;
+}
+
+.combo-box:hover {
+    -fx-background-color: #f2f2f2;
+}
+
+.combo-box:disabled {
+    -fx-opacity: 0.5;
+    -fx-cursor: not-allowed;
+}
+
+.combo-box:focused {
+    -fx-focus-color: #2F80ED;
+    -fx-border-color: #2F80ED;
+}
+.transparent .text-field {
+    -fx-border-color: transparent;
+    -fx-background-insets: none;
+    -fx-border-color: transparent;
+    /*    -fx-font-size: 16;*/
+}
+
+.text-field {
+    -fx-background-color: #c2c2c2; /* light gray background */
+    -fx-background-radius: 10; /* more rounded corners */
+    -fx-padding: 10; /* add some padding */
+    -fx-text-fill: #333; /* dark gray text */
+    -fx-font-size: 16; /* larger font size */
+    -fx-font-family: "Segoe UI", "Helvetica Neue", sans-serif; /* modern font */
+    -fx-border-width: 1; /* no border */
+    -fx-border-radius: 10; /* more rounded corners */
+}
+
+.text-field:focused {
+    -fx-background-color: #fff; /* white background on focus */
+    -fx-border-color: #007bff; /* blue border on focus */
+    -fx-border-width: 2; /* thicker border on focus */
+    -fx-border-radius: 10; /* more rounded corners */
+}
+
+.text-field:error {
+    -fx-background-color: #ffe6e6; /* light red background on error */
+    -fx-text-fill: #ff0000; /* red text on error */
+}
+.card {
+    -fx-padding: 20;
+    -fx-border-radius: 20;
+    -fx-background-color: transparent;
+}
+
+.card-background {
+    -fx-fill: #007bff;
+    -fx-stroke: #007bff;
+    -fx-stroke-width: 1;
+    -fx-arc-width: 20;
+    -fx-arc-height: 20;
+}
+
+.card-text {
+    -fx-font-size: 24;
+    -fx-font-weight: bold;
+    -fx-text-fill: #333;
+    -fx-alignment: CENTER;
+    -fx-padding: 20;
 }
